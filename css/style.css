@@ -1,0 +1,125 @@
+*{
+    margin:0;
+    padding: 20px;
+    box-sizing: border-box; 
+}
+html{
+
+    font-size: 62.5%;
+}
+.header{
+    background-image: linear-gradient(to bottom right,#FF7f50,#ecb10ecc);
+    height: 90vh;  
+    padding: 0rem;
+    clip-path: circle(30.0% at 50% 50%);
+   
+    
+}
+.profileBox{
+    width: 100%;
+    height: 100%;
+   
+}
+.profile{
+    position: absolute;
+    left: 38%;
+    height: 30rem;
+    top: 15.5%;
+    clip-path: circle(40.2% at 50% 50%);
+    animation-name: moveinright;
+    animation-duration: 1s;
+    
+    
+}
+.name-box{
+    position: absolute;
+    text-align: center;
+   
+    left: 36.2%;
+    top: 56%;
+    animation-name: moveinleft;
+    animation-duration: 1s;
+    
+}
+
+.instagram{
+    height: 7rem;
+    width: 7rem;
+    animation-name: fadesUP;
+    animation-duration: 2s;
+}
+.instagram:hover{
+    transform: scale(1.5);
+}
+.linkedin{
+    height: 7rem;
+    width: 7rem;
+    animation-name: fadesUP; 
+    animation-duration: 2s;
+}
+.linkedin:hover{
+    transform: scale(1.5);
+}
+.handles{
+    position: relative;
+    bottom: 17rem;
+    left: 44.5rem;
+
+}
+.github{
+    height: 7rem;
+    width: 7rem;
+    animation-name: fadesUP;
+    animation-duration: 2s;
+   
+}
+.github:hover{
+    transform: scale(1.5);
+}
+.name{
+    color: rgb(80, 79, 79);
+    font-family: "Lato",sans-serif;
+    font-weight: 400;
+    font-size: 2.5rem;
+    letter-spacing: 1.5rem;
+}
+@keyframes fadesUP{
+    0%{
+        opacity: 0;
+        transform:translateY(10rem);
+      }
+      75%{
+        transform: translateY(-2rem);
+     }
+      100%{
+     opacity: 1;
+     transform:translate(0);
+      }
+ }
+ @keyframes moveinright{
+    0%{
+        opacity: 0;
+        transform:translateX(10rem);
+      }
+      70%{
+          transform: translate(-2rem);
+      }
+      100%{
+     opacity: 1;
+     transform:translate(0);
+      }
+    }
+      
+      @keyframes moveinleft{
+        0%{
+          opacity: 0;
+          transform:translateX(-10rem);
+        }
+        70%{
+            transform: translate(2rem);
+        }
+        100%{
+       opacity: 1;
+       transform:translate(0);
+        }
+    }
